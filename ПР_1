@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання готелю</title>
+</head>
+<body>
+    <h1>Бронювання готелю</h1>
+    <form>
+        <label for="name">Ім'я та прізвище</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Введіть ім'я та прізвище"
+            required
+        >
+        <br><br>
+        <label for="email">Електронна пошта</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введіть email"
+            required
+        >
+ <br><br>
+        <label for="phone">Номер телефону</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Введіть номер телефону"
+        >
+        <br><br>
+        <label for="checkin">Дата заїзду</label>
+        <input
+            type="date"
+            id="checkin"
+            name="checkin"
+            required
+        >
+        <br><br>
+        <label for="checkout">Дата виїзду</label>
+        <input
+            type="date"
+            id="checkout"
+            name="checkout"
+            required
+        >
+        <br><br>
+        <label for="guests">Кількість гостей</label>
+        <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="6"
+        >
+        <br><br>
+        <p>Тип номера:</p>
+        <input type="radio" name="room" value="standard" required>
+        Стандарт
+        <input type="radio" name="room" value="junior">
+        Напівлюкс
+        <input type="radio" name="room" value="lux">
+        Люкс
+        <br><br>
+        <p>Додаткові послуги:</p>
+        <input type="checkbox" name="breakfast" value="breakfast">
+        Сніданок
+        <input type="checkbox" name="parking" value="parking">
+        Паркінг
+        <input type="checkbox" name="transfer" value="transfer">
+        Трансфер
+        <input type="checkbox" name="cleaning" value="cleaning">
+        Додаткове прибирання
+        <br><br>
+        <label for="city">Місто</label>
+        <select name="city" id="city">
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+            <option value="uzhhorod">Ужгород</option>
+            <option value="chernivtsi">Чернівці</option>
+        </select>
+        <br><br>
+        <label for="message">
+          Додаткові побажання
+        </label>
+        <br>
+        <textarea
+            name="message"
+            id="message"
+            cols="50"
+            rows="10"
+            maxlength="250"
+            placeholder="Введіть додаткові побажання">
+            </textarea>
+        <br><br>
+        <button type="submit">Відправити</button>
+        <button type="reset">Очистити</button>
+    </form>
+
+</body>
+</html>
