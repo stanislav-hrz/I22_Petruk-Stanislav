@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог комп'ютерної техніки</title>
+</head>
+<body>
+
+    <!-- Назва та заголовок таблиці -->
+    <table border="1">
+        <caption>Каталог комп'ютерної техніки</caption>
+
+        <!-- Верхня частина із заголовками (thead) -->
+        <thead>
+            <tr>
+                <!-- Об'єднання по вертикалі для першої колонки -->
+                <th rowspan="2">Категорія</th>
+                <!-- Спільний заголовок по горизонталі для двох стовпців (colspan="2") -->
+                <th colspan="2">Інформація про товар</th>
+                <th rowspan="2">Ціна (грн)</th>
+                <th rowspan="2">Наявність</th>
+            </tr>
+            <tr>
+                <th>Назва товару</th>
+                <th>Виробник</th>
+            </tr>
+        </thead>
+
+        <!-- Основна частина з даними (tbody) -->
+        <tbody>
+            <tr>
+                <!-- Об'єднання по вертикалі для однієї категорії (rowspan="2") -->
+                <td rowspan="2">Периферія</td>
+                <td>Клавіатура</td>
+                <td>Logitech</td>
+                <td>1200</td>
+                <td>Є в наявності</td>
+            </tr>
+            <tr>
+                <td>Миша</td>
+                <td>Razer</td>
+                <td>850</td>
+                <td>Є в наявності</td>
+            </tr>
+            <tr>
+                <td>Комп'ютери</td>
+                <td>Ноутбук</td>
+                <td>ASUS</td>
+                <td>28000</td>
+                <td>Є в наявності</td>
+            </tr>
+            <tr>
+                <td>Монітори</td>
+                <td>Монітор</td>
+                <td>Samsung</td>
+                <td>6500</td>
+                <td>Немає в наявності</td>
+            </tr>
+            <tr>
+                <td>Аудіо</td>
+                <td>Навушники</td>
+                <td>Sony</td>
+                <td>2100</td>
+                <td>Є в наявності</td>
+            </tr>
+        </tbody>
+
+        <!-- Підсумкова частина (tfoot) -->
+        <tfoot>
+            <tr>
+                <!-- Об'єднання по горизонталі для підсумкового рядка (colspan="5") -->
+                <td colspan="5" align="center">
+                    <strong>Всього товарів: 5</strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
